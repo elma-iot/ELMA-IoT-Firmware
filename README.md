@@ -17,7 +17,7 @@ These `.bin` files are application images for OTA on devices already running a c
 
 In Firmware settings, use owner `elma-iot` and repository `ELMA-IoT-Firmware`. Board-specific builds match their compiled board ID; a missing compatible image must be reported as unavailable, not replaced by an image for another board.
 
-Release builds contain clean project defaults, without personal Wi-Fi, MQTT, account credentials or user files. Existing settings are preserved by normal OTA updates. Configure a newly installed device through its setup access point or the Windows application.
+Release builds contain clean project defaults, without personal Wi-Fi, MQTT, account credentials or user files. Saved settings are retained by normal OTA updates. Before switching from a custom build with personal compiled defaults, export the configuration: older builds stored only differences from their compiled defaults, so Wi-Fi or other default values may need to be reapplied with the Windows application after installing a clean image. Configure a newly installed device through its setup access point or the Windows application.
 
 ## Test scope
 
